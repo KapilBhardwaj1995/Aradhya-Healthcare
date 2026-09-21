@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aradhaya Enterprises — pediatrician-tested baby diapers, dermatologically safe sanitary pads, panty liners & maternity pads. Made in Shamli, Uttar Pradesh. Products, pricing & contact."
+    />
+    <title>Aradhaya Enterprises — Baby & Women Care | Products & Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <!-- ======= top info bar ======= -->
+    <div class="topbar">
+      <div class="wrap topbar-in">
+        <p class="topbar-left">
+          <span>Aradhaya Enterprises</span>
+          <span class="dot">•</span>
+          <span data-i18n="top.est">Est. 2018</span>
+          <span class="dot">•</span>
+          <span data-i18n="top.iso">ISO 22716 GMP</span>
+          <span class="dot hide-s">•</span>
+          <span class="hide-s topbar-made" data-i18n="top.made">Made in Shamli, Uttar Pradesh</span>
+        </p>
+        <p class="topbar-right">
+          <a href="mailto:care@aradhayaenterprises.in">care@aradhayaenterprises.in</a>
+          <a href="tel:+919000012345">+91 90000 12345</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- ======= sticky nav ======= -->
+    <header class="nav" id="top">
+      <div class="wrap nav-in">
+        <a class="brand" href="#top">
+          <svg viewBox="0 0 48 48" class="logo" aria-hidden="true">
+            <rect x="1.5" y="1.5" width="45" height="45" rx="13" fill="#C0511C" />
+            <rect x="1.5" y="1.5" width="45" height="45" rx="13" stroke="#93400F" stroke-width="1.4" fill="none" />
+            <path d="M24 9.5c5 6 9.3 11.1 9.3 16.5a9.3 9.3 0 0 1-18.6 0C14.7 20.6 19 15.5 24 9.5Z" fill="#FAF4EA" />
+            <path
+              d="M24 18v13m0-6.4c-1.8-1.5-3.4-1.9-5-1.8.6 2.2 2.4 3.8 5 4.3m0-2.5c1.8-1.5 3.4-1.9 5-1.8-.6 2.2-2.4 3.8-5 4.3"
+              stroke="#C0511C"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              fill="none"
+            />
+            <circle cx="36.5" cy="12.5" r="2.4" fill="#FAF4EA" opacity="0.85" />
+          </svg>
+          <span class="brand-text">
+            <strong class="brand-name">Aradhaya Enterprises</strong>
+            <span class="brand-tag" data-i18n="footer.tagline">Baby & Women Care</span>
+          </span>
+        </a>
+
+        <nav class="navlinks" aria-label="Primary">
+          <a class="link-sweep" href="#products" data-i18n="nav.products">Products</a>
+          <a class="link-sweep" href="#about" data-i18n="nav.about">Our story</a>
+          <a class="link-sweep" href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <div class="lang-switch" role="group" aria-label="Language / भाषा">
+            <button id="langEn" class="lang-opt active" type="button">EN</button>
+            <span class="lang-sep" aria-hidden="true">|</span>
+            <button id="langHi" class="lang-opt" type="button">हिंदी</button>
+          </div>
+          <button class="btn btn-dark btn-sm" id="adminOpen" type="button">
+            <svg viewBox="0 0 24 24" class="ic" aria-hidden="true">
+              <rect x="4.6" y="10.2" width="14.8" height="10.2" rx="2.2" stroke="currentColor" stroke-width="1.6" fill="none" />
+              <path d="M8.2 10.2V7.6a3.8 3.8 0 0 1 7.6 0v2.6" stroke="currentColor" stroke-width="1.6" fill="none" />
+              <circle cx="12" cy="15.2" r="1.4" fill="currentColor" />
+            </svg>
+            <span data-i18n="nav.admin">Admin</span>
+          </button>
+          <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" type="button">
+            <svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" /></svg>
+          </button>
+        </div>
+      </div>
+      <nav class="drawer" id="drawer" aria-label="Mobile">
+        <a href="#products" data-i18n="nav.products">Products</a>
+        <a href="#about" data-i18n="nav.about">Our story</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <button class="btn btn-dark" id="adminOpenMobile" type="button"><span data-i18n="nav.admin">Admin</span></button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ======= hero ======= -->
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div>
+            <span class="badge reveal">
+              <svg viewBox="0 0 24 24" class="ic xs" aria-hidden="true"><path d="M12 2.5L21.5 12 12 21.5 2.5 12 12 2.5Z" fill="currentColor" /></svg>
+              <span data-i18n="hero.badge">Gentle care for what matters most</span>
+            </span>
+            <h1 class="display reveal">
+              <span data-i18n="hero.title1">Aradhaya Enterprises</span>
+              <em data-i18n="hero.title2">Baby & Women Care</em>
+            </h1>
+
+            <figure class="hero-figure reveal">
+              <div class="hero-shot">
+                <img
+                  class="kenburns"
+                  src="https://images.pexels.com/photos/32386175/pexels-photo-32386175.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                  alt="Happy baby in diaper lying on a soft blanket"
+                />
+              </div>
+              <figcaption><strong>CloudSoft™</strong> — <span data-i18n="hero.caption">happy baby in diaper. 12-hr dry. 0% fragrance.</span></figcaption>
+            </figure>
+
+            <p class="hero-para reveal" data-i18n="hero.para">
+              Pediatrician-tested baby diapers and dermatologically safe sanitary care, made in our own ISO-certified unit in Shamli, Uttar Pradesh.
+            </p>
+
+            <div class="hero-ctas reveal">
+              <a class="btn btn-primary" href="#products"><span data-i18n="hero.cta1">View products</span> ↓</a>
+              <a class="btn btn-ghost" href="#contact" data-i18n="hero.cta2">Contact us</a>
+            </div>
+
+            <ul class="checks reveal">
+              <li><span class="tick">✓</span><span data-i18n="hero.check1">12-hr dry comfort</span></li>
+              <li><span class="tick">✓</span><span data-i18n="hero.check2">0% chlorine bleach</span></li>
+              <li><span class="tick">✓</span><span data-i18n="hero.check3">ISO 22716 certified</span></li>
+              <li><span class="tick">✓</span><span data-i18n="hero.check4">COD Pan-India</span></li>
+            </ul>
+          </div>
+
+          <!-- public category card (no inventory data) -->
+          <aside class="inv-card cat-card reveal" aria-label="Categories">
+            <p class="inv-live"><span class="pulse-dot"></span><span data-i18n="hero.catKicker">Our range</span></p>
+            <h2 class="inv-title" data-i18n="hero.catTitle">Shop by category</h2>
+            <div class="cat-rows">
+              <button class="cat-row" type="button" data-cat="diapers">
+                <span class="cat-row-name" data-i18n="cat.diapers">Baby Diapers</span>
+                <span class="cat-row-meta"><span class="js-count" data-cat-count="diapers">5</span> <span data-i18n="hero.skus">SKUs</span> · <span data-i18n="hero.from">from</span> <span class="js-from" data-cat-from="diapers">₹649</span></span>
+              </button>
+              <button class="cat-row" type="button" data-cat="pads">
+                <span class="cat-row-name" data-i18n="cat.pads">Sanitary Pads</span>
+                <span class="cat-row-meta"><span class="js-count" data-cat-count="pads">3</span> <span data-i18n="hero.skus">SKUs</span> · <span data-i18n="hero.from">from</span> <span class="js-from" data-cat-from="pads">₹189</span></span>
+              </button>
+              <button class="cat-row" type="button" data-cat="liners">
+                <span class="cat-row-name" data-i18n="cat.liners">Panty Liners</span>
+                <span class="cat-row-meta"><span class="js-count" data-cat-count="liners">2</span> <span data-i18n="hero.skus">SKUs</span> · <span data-i18n="hero.from">from</span> <span class="js-from" data-cat-from="liners">₹129</span></span>
+              </button>
+              <button class="cat-row" type="button" data-cat="maternity">
+                <span class="cat-row-name" data-i18n="cat.maternity">Maternity Pads</span>
+                <span class="cat-row-meta"><span class="js-count" data-cat-count="maternity">2</span> <span data-i18n="hero.skus">SKUs</span> · <span data-i18n="hero.from">from</span> <span class="js-from" data-cat-from="maternity">₹299</span></span>
+              </button>
+            </div>
+            <p class="inv-foot">
+              <span class="inv-sync"><span class="pulse-dot green"></span><span data-i18n="hero.catNote">Ships across India, COD available</span></span>
+              <span class="inv-note" data-i18n="inv.note">Care line: +91 90000 12345 · Toll free 1800 000 0000</span>
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ======= marquee ======= -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span data-i18n="m1">0% chlorine bleach</span><i>◆</i>
+          <span data-i18n="m2">Pediatrician tested</span><i>◆</i>
+          <span data-i18n="m3">pH 4.5 balanced topsheet</span><i>◆</i>
+          <span data-i18n="m4">12-hr dry comfort</span><i>◆</i>
+          <span data-i18n="m5">Dermatologically safe</span><i>◆</i>
+          <span data-i18n="m6">COD Pan-India</span><i>◆</i>
+          <span data-i18n="m7">Made in Shamli, UP</span><i>◆</i>
+          <span data-i18n="m1">0% chlorine bleach</span><i>◆</i>
+          <span data-i18n="m2">Pediatrician tested</span><i>◆</i>
+          <span data-i18n="m3">pH 4.5 balanced topsheet</span><i>◆</i>
+          <span data-i18n="m4">12-hr dry comfort</span><i>◆</i>
+          <span data-i18n="m5">Dermatologically safe</span><i>◆</i>
+          <span data-i18n="m6">COD Pan-India</span><i>◆</i>
+          <span data-i18n="m7">Made in Shamli, UP</span><i>◆</i>
+        </div>
+      </div>
+
+      <!-- ======= products (public: image, name, price, category) ======= -->
+      <section class="section" id="products">
+        <div class="wrap">
+          <div class="prod-head reveal">
+            <div>
+              <h2 class="sec-title" data-i18n="prod.title">Products</h2>
+              <p class="sec-sub" data-i18n="prod.sub">Every product with image, name, price and category.</p>
+            </div>
+            <label class="search">
+              <svg viewBox="0 0 24 24" class="ic" aria-hidden="true">
+                <circle cx="10.8" cy="10.8" r="6.3" stroke="currentColor" stroke-width="1.8" fill="none" />
+                <path d="M15.5 15.5L20.5 20.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+              <input id="searchInput" type="search" data-i18n-ph="prod.search" placeholder="Search products…" />
+            </label>
+          </div>
+
+          <div class="chips reveal" id="chips" role="group" aria-label="Filter by category">
+            <button class="chip active" type="button" data-cat="all"><span data-i18n="prod.all">All</span> · <span class="js-count" data-cat-count="all">12</span></button>
+            <button class="chip" type="button" data-cat="diapers"><span data-i18n="cat.diapers">Baby Diapers</span> · <span class="js-count" data-cat-count="diapers">5</span></button>
+            <button class="chip" type="button" data-cat="pads"><span data-i18n="cat.pads">Sanitary Pads</span> · <span class="js-count" data-cat-count="pads">3</span></button>
+            <button class="chip" type="button" data-cat="liners"><span data-i18n="cat.liners">Panty Liners</span> · <span class="js-count" data-cat-count="liners">2</span></button>
+            <button class="chip" type="button" data-cat="maternity"><span data-i18n="cat.maternity">Maternity Pads</span> · <span class="js-count" data-cat-count="maternity">2</span></button>
+          </div>
+
+          <div class="grid" id="grid">
+            <article class="card reveal" data-id="dp-s72" data-cat="diapers" data-search="baby diapers tape style s 72 tabs s 4-8 kg बेबी डायपर">
+              <div class="card-media">
+                <img loading="lazy" src="https://images.pexels.com/photos/8909759/pexels-photo-8909759.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Baby resting comfortably in a soft diaper" />
+                <span class="flag">72 Tabs • S · 4–8 kg</span>
+              </div>
+              <div class="card-body">
+                <p class="cat" data-i18n="cat.diapers">Baby Diapers</p>
+                <h3 class="pname">Baby Diapers – Tape Style S</h3>
+                <p class="meta">★ 4.7</p>
+                <p class="desc" data-i18n="desc.dp-s72">Pediatrician co-designed tape diapers with CloudSoft core, wetness indicator and 0% fragrance.</p>
+                <div class="price-row">
+                  <div>
+                    <p class="price">₹649</p>
+                    <p class="mrp"><span data-i18n="prod.mrp">MRP</span> <s>₹899</s> <b class="save"><span data-i18n="prod.save">save</span> <span class="js-save">₹250</span></b></p>
+                  </div>
+                  <button class="btn btn-clay js-enquire" type="button" data-name="Baby Diapers – Tape Style S" data-sku="AH-DP-S72" data-i18n="prod.enquire">Enquire</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-id="dp-m62" data-cat="diapers" data-search="baby pants m 62 pants m 7-12 kg बेबी डायपर">
+              <div class="card-media">
+                <img loading="lazy" src="https://images.pexels.com/photos/5215559/pexels-photo-5215559.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Joyful baby in diaper stretching on a white bed" />
+                <span class="flag">62 Pants • M · 7–12 kg</span>
+              </div>
+              <div class="card-body">
+                <p class="cat" data-i18n="cat.diapers">Baby Diapers</p>
+                <h3 class="pname">Baby Pants M</h3>
+                <p class="meta">★ 4.8</p>
+                <p class="desc" data-i18n="desc.dp-m62">All-night pant diapers with 360° cottony waist and 5 sec absorb channels.</p>
+                <div class="price-row">
+                  <div>
+                    <p class="price">₹699</p>
+                    <p class="mrp"><span data-i18n="prod.mrp">MRP</span> <s>₹949</s> <b class="save"><span data-i18n="prod.save">save</span> <span class="js-save">₹250</span></b></p>
+                  </div>
+                  <button class="btn btn-clay js-enquire" type="button" data-name="Baby Pants M" data-sku="AH-DP-M62" data-i18n="prod.enquire">Enquire</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-id="dp-l56" data-cat="diapers" data-search="ultradry l pants 56 pants l 9-14 kg बेबी डायपर">
+              <div class="card-media">
+                <img loading="lazy" src="https://images.pexels.com/photos/6393189/pexels-photo-6393189.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Infant in diaper lying on a soft sheet" />
+                <span class="flag">56 Pants • L · 9–14 kg</span>
+              </div>
+              <div class="card-body">
+                <p class="cat" data-i18n="cat.diapers">Baby Diapers</p>
+                <h3 class="pname">UltraDry L Pants</h3>
+                <p class="meta">★ 4.6</p>
+                <p class="desc" data-i18n="desc.dp-l56">Overnight pants with Night Lock™ and aloe liner – dermat tested.</p>
+                <div class="price-row">
+                  <div>
+                    <p class="price">₹729</p>
+                    <p class="mrp"><span data-i18n="prod.mrp">MRP</span> <s>₹999</s> <b class="save"><span data-i18n="prod.save">save</span> <span class="js-save">₹270</span></b></p>
+                  </div>
+                  <button class="btn btn-clay js-enquire" type="button" data-name="UltraDry L Pants" data-sku="AH-DP-L56" data-i18n="prod.enquire">Enquire</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-id="dp-xl48" data-cat="diapers" data-search="premium xl pants 48 pants xl 12-17 kg बेबी डायपर">
+              <div class="card-media">
+                <img loading="lazy" src="https://images.pexels.com/photos/14620499/pexels-photo-14620499.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Baby legs in a diaper on a comfortable bed" />
+                <span class="flag">48 Pants • XL · 12–17 kg</span>
+              </div>
+              <div class="card-body">
+                <p class="cat" data-i18n="cat.diapers">Baby Diapers</p>
+                <h3 class="pname">Premium XL Pants</h3>
+                <p class="meta">★ 4.7</p>
+                <p class="desc" data-i18n="desc.dp-xl48">Premium XL with 3D air pockets, thinner core, faster absorbency.</p>
+                <div class="price-row">
+                  <div>
+                    <p class="price">₹799</p>
+                    <p class="mrp"><span data-i18n="prod.mrp">MRP</span> <s>₹1,099</s> <b class="save"><span data-i18n="prod.save">save</span> <span class="js-save">₹300</span></b></p>
+                  </div>
+                  <button class="btn btn-clay js-enquire" type="button" data-name="Premium XL Pants" data-sku="AH-DP-XL48" data-i18n="prod.enquire">Enquire</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-id="dp-xxl40" data-cat="diapers" data-search="xxl junior pants 40 pants xxl 15-25 kg बेबी डायपर">
+              <div class="card-media">
+                <img loading="lazy" src="https://images.pexels.com/photos/5215539/pexels-photo-5215539.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Toddler sitting happily on a bed wearing diaper pants" />
+                <span class="flag">40 Pants • XXL · 15–25 kg</span>
+              </div>
+              <div class="card-body">
+                <p class="cat" data-i18n="cat.diapers">Baby Diapers</p>
+                <h3 class="pname">XXL Junior Pants</h3>
+                <p class="meta">★ 4.6</p>
+                <p class="desc" data-i18n="desc.dp-xxl40">Potty training toddler pants, easy tear sides, 12h night protection.</p>
+                <div class="price-row">
+                  <div>
+                    <p class="price">₹849</p>
+                    <p class="mrp"><span data-i18n="prod.mrp">MRP</span> <s>₹1,149</s> <b class="save"><span data-i18n="prod.save">save</span> <span class="js-save">₹300</span></b></p>
+                  </div>
+                  <button class="btn btn-clay js-enquire" type="button" data-name="XXL Junior Pants" data-sku="AH-DP-XXL40" data-i18n="prod.enquire">Enquire</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-id="sp-u30" data-cat="pads" data-search="ultra thins xl 30 pads 280mm सैनिटरी पैड">
+              <div class="card-media">
+                <img loading="lazy" src="https://images.pexels.com/photos/7692269/pexels-photo-7692269.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Overhead shot of sanitary pads on light pink background" />
+                <span class="flag">30 Pads • 280mm</span>
+              </div>
+              <div class="card-body">
+                <p class="cat" data-i18n="cat.pads">Sanitary Pads</p>
+                <h3 class="pname">Ultra Thins – XL</h3>
+                <p class="meta">★ 4.9</p>
+                <p class="desc" data-i18n="desc.sp-u30">Ultra-thin 2mm pad with CottonFeel™ top sheet, pH 4.5, 0% perfume.</p>
+                <div class="price-row">
+                  <div>
+                    <p class="price">₹299</p>
+                    <p class="mrp"><span data-i18n="prod.mrp">MRP</span> <s>₹399</s> <b class="save"><span data-i18n="prod.save">save</span> <span class="js-save">₹100</span></b></p>
+                  </div>
+                  <button class="btn btn-clay js-enquire" type="button" data-name="Ultra Thins – XL" data-sku="AH-SP-U30" data-i18n="prod.enquire">Enquire</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-id="sp-n18" data-cat="pads" data-search="night long xxl 18 pads 360mm सैनिटरी पैड">
+              <div class="card-media">
+                <img loading="lazy" src="https://images.pexels.com/photos/7692271/pexels-photo-7692271.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="White sanitary pads on a soft pastel pink surface" />
+                <span class="flag">18 Pads • 360mm</span>
+              </div>
+              <div class="card-body">
+                <p class="cat" data-i18n="cat.pads">Sanitary Pads</p>
+                <h3 class="pname">Night Long – XXL</h3>
+                <p class="meta">★ 4.8</p>
+                <p class="desc" data-i18n="desc.sp-n18">Heavy flow night pad, 360° leak protection, 8-hr lock.</p>
+                <div class="price-row">
+                  <div>
+                    <p class="price">₹279</p>
+                    <p class="mrp"><span data-i18n="prod.mrp">MRP</span> <s>₹349</s> <b class="save"><span data-i18n="prod.save">save</span> <span class="js-save">₹70</span></b></p>
+                  </div>
+                  <button class="btn btn-clay js-enquire" type="button" data-name="Night Long – XXL" data-sku="AH-SP-N18" data-i18n="prod.enquire">Enquire</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-id="sp-h10" data-cat="pads" data-search="maxi heavy flow xxxl 10 pads 420mm सैनिटरी पैड">
+              <div class="card-media">
+                <img loading="lazy" src="https://images.pexels.com/photos/7692457/pexels-photo-7692457.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Close-up of sanitary napkins on pastel pink background" />
+                <span class="flag">10 Pads • 420mm</span>
+              </div>
+              <div class="card-body">
+                <p class="cat" data-i18n="cat.pads">Sanitary Pads</p>
+                <h3 class="pname">Maxi Heavy Flow – XXXL</h3>
+                <p class="meta">★ 4.7</p>
+                <p class="desc" data-i18n="desc.sp-h10">420mm maxi night pad with clinical cotton top.</p>
+                <div class="price-row">
+                  <div>
+                    <p class="price">₹189</p>
+                    <p class="mrp"><span data-i18n="prod.mrp">MRP</span> <s>₹249</s> <b class="save"><span data-i18n="prod.save">save</span> <span class="js-save">₹60</span></b></p>
+                  </div>
+                  <button class="btn btn-clay js-enquire" type="button" data-name="Maxi Heavy Flow – XXXL" data-sku="AH-SP-H10" data-i18n="prod.enquire">Enquire</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-id="pl-40" data-cat="liners" data-search="daily panty liners 40 liners 155mm पैंटी लाइनर">
+              <div class="card-media">
+                <img loading="lazy" src="https://images.pexels.com/photos/7692473/pexels-photo-7692473.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="A thin white panty liner on pink background" />
+                <span class="flag">40 Liners • 155mm</span>
+              </div>
+              <div class="card-body">
+                <p class="cat" data-i18n="cat.liners">Panty Liners</p>
+                <h3 class="pname">Daily Panty Liners</h3>
+                <p class="meta">★ 4.5</p>
+                <p class="desc" data-i18n="desc.pl-40">Everyday 1mm breathable liner for discharge, individually wrapped.</p>
+                <div class="price-row">
+                  <div>
+                    <p class="price">₹149</p>
+                    <p class="mrp"><span data-i18n="prod.mrp">MRP</span> <s>₹199</s> <b class="save"><span data-i18n="prod.save">save</span> <span class="js-save">₹50</span></b></p>
+                  </div>
+                  <button class="btn btn-clay js-enquire" type="button" data-name="Daily Panty Liners" data-sku="AH-PL-40" data-i18n="prod.enquire">Enquire</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-id="pl-a20" data-cat="liners" data-search="active liners long 20 liners 180mm पैंटी लाइनर">
+              <div class="card-media">
+                <img loading="lazy" src="https://images.pexels.com/photos/7692333/pexels-photo-7692333.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="High-angle close-up of a long liner on pink surface" />
+                <span class="flag">20 Liners • 180mm</span>
+              </div>
+              <div class="card-body">
+                <p class="cat" data-i18n="cat.liners">Panty Liners</p>
+                <h3 class="pname">Active Liners Long</h3>
+                <p class="meta">★ 4.4</p>
+                <p class="desc" data-i18n="desc.pl-a20">Active-fit long liner with odor control layer.</p>
+                <div class="price-row">
+                  <div>
+                    <p class="price">₹129</p>
+                    <p class="mrp"><span data-i18n="prod.mrp">MRP</span> <s>₹169</s> <b class="save"><span data-i18n="prod.save">save</span> <span class="js-save">₹40</span></b></p>
+                  </div>
+                  <button class="btn btn-clay js-enquire" type="button" data-name="Active Liners Long" data-sku="AH-PL-A20" data-i18n="prod.enquire">Enquire</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-id="mt-xl10" data-cat="maternity" data-search="maternity pads xl 10 pads 410mm मैटर्निटी पैड">
+              <div class="card-media">
+                <img loading="lazy" src="https://images.pexels.com/photos/4041804/pexels-photo-4041804.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Mother gently holding newborn baby in hospital setting" />
+                <span class="flag">10 Pads • 410mm</span>
+              </div>
+              <div class="card-body">
+                <p class="cat" data-i18n="cat.maternity">Maternity Pads</p>
+                <h3 class="pname">Maternity Pads XL</h3>
+                <p class="meta">★ 4.9</p>
+                <p class="desc" data-i18n="desc.mt-xl10">Hospital-grade postpartum pads, ultra soft cotton, sterile individually packed.</p>
+                <div class="price-row">
+                  <div>
+                    <p class="price">₹349</p>
+                    <p class="mrp"><span data-i18n="prod.mrp">MRP</span> <s>₹449</s> <b class="save"><span data-i18n="prod.save">save</span> <span class="js-save">₹100</span></b></p>
+                  </div>
+                  <button class="btn btn-clay js-enquire" type="button" data-name="Maternity Pads XL" data-sku="AH-MT-XL10" data-i18n="prod.enquire">Enquire</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-id="mt-n8" data-cat="maternity" data-search="maternity night plus 8 pads 450mm मैटर्निटी पैड">
+              <div class="card-media">
+                <img loading="lazy" src="https://images.pexels.com/photos/4504005/pexels-photo-4504005.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Newborn baby peacefully sleeping on mother's chest" />
+                <span class="flag">8 Pads • 450mm</span>
+              </div>
+              <div class="card-body">
+                <p class="cat" data-i18n="cat.maternity">Maternity Pads</p>
+                <h3 class="pname">Maternity Night Plus</h3>
+                <p class="meta">★ 4.8</p>
+                <p class="desc" data-i18n="desc.mt-n8">450mm ultra-long pads for first postpartum nights.</p>
+                <div class="price-row">
+                  <div>
+                    <p class="price">₹299</p>
+                    <p class="mrp"><span data-i18n="prod.mrp">MRP</span> <s>₹399</s> <b class="save"><span data-i18n="prod.save">save</span> <span class="js-save">₹100</span></b></p>
+                  </div>
+                  <button class="btn btn-clay js-enquire" type="button" data-name="Maternity Night Plus" data-sku="AH-MT-N8" data-i18n="prod.enquire">Enquire</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="empty hidden" id="emptyState">
+            <p data-i18n="prod.empty">No products match your search.</p>
+            <button class="btn btn-primary btn-sm" id="clearFilters" type="button" data-i18n="prod.clear">Clear filters</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= about ======= -->
+      <section class="section section-parch" id="about">
+        <div class="wrap about-grid">
+          <div class="about-sticky">
+            <p class="kicker reveal" data-i18n="about.kicker">Since 2018</p>
+            <h2 class="sec-title reveal" data-i18n="about.title">Made in Shamli. Trusted across India.</h2>
+            <p class="body reveal" data-i18n="about.p1">
+              Aradhaya Enterprises began in 2018 as a two-line diaper unit in District Shamli, Uttar Pradesh. Today our ISO 22716 GMP-certified facility runs four lines — baby diapers, sanitary pads, panty liners and maternity pads — with an in-house lab that tests every batch for absorbency, leak-back and skin safety.
+            </p>
+            <p class="body reveal" data-i18n="about.p2">
+              We keep the formulation honest: 0% chlorine bleach and 0% fragrance in the baby line, pH 4.5 balanced topsheets for women's care, and FSC-sourced pulp throughout. Twelve SKUs ship to pharmacies, hospitals and homes across India — cash on delivery included.
+            </p>
+            <figure class="about-figure reveal">
+              <img loading="lazy" src="https://images.pexels.com/photos/6209543/pexels-photo-6209543.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Mother gently changing a baby's onesie in a cozy home setting" />
+              <div class="polaroid">
+                <img loading="lazy" src="https://images.pexels.com/photos/7692322/pexels-photo-7692322.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="" />
+              </div>
+              <figcaption data-i18n="about.imgCap">Line 3 assembly — CloudSoft™ core laying, Shamli unit.</figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <ul class="points">
+              <li class="reveal">
+                <svg viewBox="0 0 24 24" class="point-ic" aria-hidden="true"><path d="M3 20.5V9.8l5.4 3V9.8l5.4 3V9.8l5.4 3v7.7H3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/><path d="M6.2 9.2V4.4h3v4.8M15.8 20.5v-4h2.6v4M8 20.5v-4h2.6v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <div><h3 data-i18n="about.pt1t">ISO 22716 GMP unit</h3><p data-i18n="about.pt1d">Hygiene-grade manufacturing with batch-level QC records and metal-free packing halls.</p></div>
+                <span class="point-num">01</span>
+              </li>
+              <li class="reveal">
+                <svg viewBox="0 0 24 24" class="point-ic" aria-hidden="true"><path d="M9.6 3h4.8M10.4 3v6L4.9 18a2.4 2.4 0 0 0 2.1 3.5h10a2.4 2.4 0 0 0 2.1-3.5L13.6 9V3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M7.6 15.4h8.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="11" cy="18.2" r="0.9" fill="currentColor"/></svg>
+                <div><h3 data-i18n="about.pt2t">In-house absorbency lab</h3><p data-i18n="about.pt2d">Every batch tested for 12-hr dryness, leak-back and wetness-indicator accuracy.</p></div>
+                <span class="point-num">02</span>
+              </li>
+              <li class="reveal">
+                <svg viewBox="0 0 24 24" class="point-ic" aria-hidden="true"><path d="M12 2.8l7.4 2.7v6c0 4.6-3.1 8.3-7.4 9.7-4.3-1.4-7.4-5.1-7.4-9.7v-6L12 2.8Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/><path d="M8.7 11.8l2.4 2.4 4.3-4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <div><h3 data-i18n="about.pt3t">Honest formulations</h3><p data-i18n="about.pt3d">0% chlorine bleach, 0% fragrance in the baby line; pH 4.5 topsheets for women's care.</p></div>
+                <span class="point-num">03</span>
+              </li>
+              <li class="reveal">
+                <svg viewBox="0 0 24 24" class="point-ic" aria-hidden="true"><path d="M2.8 6.2h11v10h-11zM13.8 9.4h3.9l3.5 3.4v3.4h-7.4" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/><circle cx="7" cy="18" r="2" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="17.4" cy="18" r="2" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+                <div><h3 data-i18n="about.pt4t">Pan-India distribution</h3><p data-i18n="about.pt4d">1,400+ pharmacy counters, 38 hospital suppliers and doorstep COD across 19,000 pincodes.</p></div>
+                <span class="point-num">04</span>
+              </li>
+            </ul>
+
+            <p class="kicker timeline-kicker reveal" data-i18n="about.tl">Milestones</p>
+            <ol class="timeline">
+              <li class="reveal"><span class="tl-dot"></span><p class="tl-year">2018</p><p class="tl-t" data-i18n="about.tl1t">First tape diaper line</p><p class="tl-d" data-i18n="about.tl1d">Unit commissioned in Shamli with 2 SKUs and a six-person crew.</p></li>
+              <li class="reveal"><span class="tl-dot"></span><p class="tl-year">2020</p><p class="tl-t" data-i18n="about.tl2t">Women's care launch</p><p class="tl-d" data-i18n="about.tl2d">Sanitary pad & panty liner line added with pH-balanced topsheets.</p></li>
+              <li class="reveal"><span class="tl-dot"></span><p class="tl-year">2022</p><p class="tl-t" data-i18n="about.tl3t">ISO 22716 certified</p><p class="tl-d" data-i18n="about.tl3d">GMP certification; in-house absorbency lab goes live.</p></li>
+              <li class="reveal"><span class="tl-dot"></span><p class="tl-year">2024</p><p class="tl-t" data-i18n="about.tl4t">1 crore units sold</p><p class="tl-d" data-i18n="about.tl4d">Lifetime sales cross 1,00,00,000 units across India.</p></li>
+              <li class="reveal"><span class="tl-dot"></span><p class="tl-year">2026</p><p class="tl-t" data-i18n="about.tl5t">12 SKUs, 4 categories</p><p class="tl-d" data-i18n="about.tl5d">Maternity range completes the basket; Aradhaya Enterprises serves 19,000 pincodes.</p></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= contact ======= -->
+      <section class="section" id="contact">
+        <div class="wrap contact-grid">
+          <div class="panel form-card reveal" id="formCard">
+            <h2 class="sec-title sm" data-i18n="contact.title">Contact Aradhaya Enterprises</h2>
+            <p class="sec-sub" data-i18n="contact.sub">Reach us in under 12 minutes</p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div>
+                  <input id="fName" data-i18n-ph="contact.name" placeholder="Your name *" aria-label="Your name" />
+                  <p class="err hidden" id="errName" data-i18n="contact.errName">Please enter your name</p>
+                </div>
+                <div>
+                  <input id="fMobile" inputmode="numeric" data-i18n-ph="contact.mobile" placeholder="Mobile number *" aria-label="Mobile number" />
+                  <p class="err hidden" id="errMobile" data-i18n="contact.errMobile">Enter a valid 10-digit mobile number</p>
+                </div>
+              </div>
+              <input id="fEmail" type="email" data-i18n-ph="contact.email" placeholder="Email (optional)" aria-label="Email (optional)" />
+              <div>
+                <textarea id="fMessage" rows="5" data-i18n-ph="contact.message" placeholder="Message *" aria-label="Message"></textarea>
+                <p class="err hidden" id="errMsg" data-i18n="contact.errMsg">Please write a short message</p>
+                <p class="draft-note hidden" id="draftNote"></p>
+              </div>
+              <button class="btn btn-primary" type="submit">
+                <svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M21 3.8L10.4 14.4M21 3.8l-6.8 17-3.8-6.4L3.6 10.6 21 3.8Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <span data-i18n="contact.send">Send inquiry</span>
+              </button>
+              <p class="form-note" data-i18n="contact.note">Your inquiry reaches our care team directly. Care line: +91 90000 12345 (9am–9pm IST).</p>
+            </form>
+
+            <div class="success hidden" id="successBox">
+              <span class="success-ic">✓</span>
+              <p class="success-title" data-i18n="contact.sentTitle">Inquiry received</p>
+              <p class="success-body"><span data-i18n="contact.sentBody">Our care team will reply in under 12 minutes (9am–9pm IST). Reference:</span> <b class="mono" id="refId"></b></p>
+              <button class="btn btn-ghost btn-sm" id="againBtn" type="button" data-i18n="contact.again">Send another inquiry</button>
+            </div>
+          </div>
+
+          <div class="contact-side">
+            <div class="panel reveal">
+              <h3 class="info-title" data-i18n="contact.infoTitle">Contact information</h3>
+              <ul class="info-list">
+                <li>
+                  <svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M5.2 3.8h3.1l1.6 4-2 1.5a12.6 12.6 0 0 0 6.8 6.8l1.5-2 4 1.6v3.1c0 1-.8 1.8-1.8 1.7C10.3 19.9 4.1 13.7 3.5 5.6c-.1-1 .7-1.8 1.7-1.8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/></svg>
+                  <p><a class="strong" href="tel:+919000012345">+91 90000 12345</a> <span class="muted" data-i18n="contact.phoneNote">(demo number)</span><span class="muted block" data-i18n="contact.toll">Toll free 1800 000 0000 (demo)</span></p>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><rect x="3" y="5.2" width="18" height="13.6" rx="2.2" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M3.8 6.6l8.2 6.2 8.2-6.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                  <p><a class="strong" href="mailto:care@aradhayaenterprises.in">care@aradhayaenterprises.in</a><span class="muted block"><span data-i18n="contact.wholesale">Wholesale:</span> <a href="mailto:distributors@aradhayaenterprises.in">distributors@aradhayaenterprises.in</a></span></p>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M12 21.5s7-6.1 7-11.2A7 7 0 0 0 5 10.3c0 5.1 7 11.2 7 11.2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/><circle cx="12" cy="10" r="2.6" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+                  <p class="muted" data-i18n="contact.address">Aradhaya Enterprises, District Shamli, Uttar Pradesh, India</p>
+                </li>
+              </ul>
+              <div class="info-ctas">
+                <a class="btn btn-dark btn-sm" href="mailto:care@aradhayaenterprises.in?subject=Inquiry%20%E2%80%94%20Aradhaya%20Enterprises" data-i18n="contact.emailBtn">Email</a>
+                <a class="btn btn-ghost btn-sm" href="tel:+919000012345" data-i18n="contact.callBtn">Call</a>
+              </div>
+            </div>
+
+            <div class="panel panel-dealer reveal">
+              <p class="dealer-title" data-i18n="contact.dealerTitle">Dealer / hospital inquiries</p>
+              <p class="dealer-body" data-i18n="contact.dealerBody">We supply maternity hospital packs and pharmacy chains across India. MOQ 200 packs. Share your GST & city — our trade team replies in 1 business day.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======= footer ======= -->
+    <footer class="footer">
+      <div class="wrap f-grid">
+        <div>
+          <div class="f-brand">
+            <svg viewBox="0 0 48 48" class="logo" aria-hidden="true">
+              <rect x="1.5" y="1.5" width="45" height="45" rx="13" fill="#C0511C" />
+              <path d="M24 9.5c5 6 9.3 11.1 9.3 16.5a9.3 9.3 0 0 1-18.6 0C14.7 20.6 19 15.5 24 9.5Z" fill="#FAF4EA" />
+              <path d="M24 18v13m0-6.4c-1.8-1.5-3.4-1.9-5-1.8.6 2.2 2.4 3.8 5 4.3m0-2.5c1.8-1.5 3.4-1.9 5-1.8-.6 2.2-2.4 3.8-5 4.3" stroke="#C0511C" stroke-width="1.7" stroke-linecap="round" fill="none" />
+            </svg>
+            <div>
+              <p class="f-name">Aradhaya Enterprises</p>
+              <p class="f-tag" data-i18n="footer.tagline">Baby & Women Care</p>
+            </div>
+          </div>
+          <p class="f-blurb" data-i18n="footer.blurb">Baby diapers, sanitary pads, panty liners and maternity pads — manufactured in Shamli, Uttar Pradesh and shipped across India.</p>
+          <p class="f-chip" data-i18n="footer.tag">ISO 22716 · Est. 2018 · Made in Shamli, Uttar Pradesh</p>
+        </div>
+        <div>
+          <p class="f-head" data-i18n="footer.links">Explore</p>
+          <ul class="f-links">
+            <li><a class="link-sweep" href="#products" data-i18n="nav.products">Products</a></li>
+            <li><a class="link-sweep" href="#about" data-i18n="nav.about">Our story</a></li>
+            <li><a class="link-sweep" href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="f-head" data-i18n="footer.contactT">Reach us</p>
+          <ul class="f-links">
+            <li><a href="tel:+919000012345">+91 90000 12345</a></li>
+            <li><a href="mailto:care@aradhayaenterprises.in">care@aradhayaenterprises.in</a></li>
+            <li><a href="mailto:distributors@aradhayaenterprises.in">distributors@aradhayaenterprises.in</a></li>
+            <li class="muted" data-i18n="contact.address">Aradhaya Enterprises, District Shamli, Uttar Pradesh, India</li>
+          </ul>
+        </div>
+      </div>
+      <div class="f-bottom"><p class="wrap" data-i18n="footer.rights">© 2026 Aradhaya Enterprises. All rights reserved.</p></div>
+    </footer>
+
+    <!-- ======= admin console (stock & sales live here, behind PIN) ======= -->
+    <div class="modal hidden" id="adminModal" role="dialog" aria-modal="true" aria-label="Admin console">
+      <button class="modal-back" id="adminClose" aria-label="Close" type="button"></button>
+      <div class="modal-panel" id="modalPanel">
+        <div class="modal-head">
+          <div>
+            <p class="modal-title" data-i18n="admin.title">Admin console</p>
+            <p class="modal-sub" data-i18n="admin.sub">Authenticated access: manage products, stock & sales. Changes publish to the website instantly.</p>
+          </div>
+          <button class="icon-btn" id="adminCloseBtn" aria-label="Close" type="button">✕</button>
+        </div>
+
+        <form class="pin-box" id="pinForm">
+          <label class="tile-label" for="pinInput" data-i18n="admin.pin">Admin PIN</label>
+          <input id="pinInput" type="password" inputmode="numeric" data-i18n-ph="admin.pinPh" placeholder="Enter 4-digit PIN" autocomplete="off" />
+          <p class="err hidden" id="pinErr" data-i18n="admin.wrong">Incorrect PIN — try 2018</p>
+          <p class="pin-hint" data-i18n="admin.hint">Demo PIN: 2018</p>
+          <button class="btn btn-primary" type="submit" data-i18n="admin.unlock">Unlock</button>
+        </form>
+
+        <div class="admin-body hidden" id="adminBody">
+          <div class="admin-tabs" role="tablist">
+            <button class="admin-tab active" id="tabProductsBtn" type="button" role="tab" data-i18n="admin.tabProducts">Manage Products</button>
+            <button class="admin-tab" id="tabStockBtn" type="button" role="tab" data-i18n="admin.tabStock">Stock & Sales</button>
+          </div>
+
+          <section id="panelProducts">
+            <form class="editor hidden" id="editForm">
+              <p class="editor-head"><span data-i18n="admin.editing">Editing</span>: <b id="editName"></b></p>
+              <div class="editor-grid">
+                <label class="editor-field wide"><span data-i18n="admin.fName">Product name</span><input id="eName" type="text" /></label>
+                <label class="editor-field"><span data-i18n="admin.fPrice">Price (₹)</span><input id="ePrice" inputmode="numeric" /></label>
+                <label class="editor-field"><span data-i18n="admin.fCat">Category</span>
+                  <select id="eCat">
+                    <option value="diapers">Baby Diapers</option>
+                    <option value="pads">Sanitary Pads</option>
+                    <option value="liners">Panty Liners</option>
+                    <option value="maternity">Maternity Pads</option>
+                  </select>
+                </label>
+                <label class="editor-field wide"><span data-i18n="admin.fImage">Image URL</span><input id="eImage" type="url" /></label>
+                <label class="editor-field"><span data-i18n="admin.fStock">Stock quantity</span><input id="eStock" inputmode="numeric" /></label>
+                <label class="editor-field"><span data-i18n="admin.fSold">Units sold</span><input id="eSold" inputmode="numeric" /></label>
+              </div>
+              <div class="editor-actions">
+                <button class="btn btn-primary btn-sm" type="submit" data-i18n="admin.save">Save changes</button>
+                <button class="btn btn-ghost btn-sm" id="editCancel" type="button" data-i18n="admin.cancel">Cancel</button>
+                <p class="save-note hidden" id="saveNote" data-i18n="admin.saved">Changes saved & published</p>
+              </div>
+            </form>
+
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th data-i18n="admin.product">Product</th>
+                  <th data-i18n="admin.fCat">Category</th>
+                  <th data-i18n="admin.fPrice">Price (₹)</th>
+                  <th data-i18n="admin.fStock">Stock</th>
+                  <th data-i18n="admin.fSold">Sold</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="adminRows"></tbody>
+            </table>
+          </section>
+
+          <section id="panelStock" class="hidden">
+            <div class="dash-stats" id="dashStats"></div>
+            <div class="dash-bars" id="dashBars"></div>
+            <div class="dash-alerts" id="dashAlerts"></div>
+          </section>
+
+          <div class="admin-foot">
+            <p class="admin-totals" id="adminTotals"></p>
+            <button class="btn btn-ghost btn-sm" id="resetBtn" type="button" data-i18n="admin.reset">Reset defaults</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./site.js"></script>
+  </body>
+</html>
