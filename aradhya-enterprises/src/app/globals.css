@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+:root {
+  --color-brand: #1e2b5e;
+  --color-brand-deep: #141d42;
+  --color-brand-mid: #2b3a7a;
+  --color-brand-soft: #eef1fa;
+  --color-brand-border: #dbe2f5;
+
+  --color-gold: #d4a43c;
+  --color-gold-deep: #b8892e;
+  --color-gold-light: #e3b854;
+  --color-gold-soft: #faf3df;
+
+  --color-rose: #f43f5e;
+  --color-rose-deep: #e11d48;
+  --color-rose-soft: #fff1f2;
+
+  --color-emerald: #10b981;
+  --color-emerald-soft: #ecfdf5;
+
+  --color-text-main: #0f172a;
+  --color-text-secondary: #334155;
+  --color-text-muted: #64748b;
+
+  --color-bg-canvas: #faf9f6;
+  --color-bg-card: #ffffff;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg-canvas);
+    color: var(--color-text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.012em;
+  }
+}
+
+/* Brand Gradients (Navy + Gold) */
+.brand-gradient {
+  background: linear-gradient(120deg, #141d42 0%, #1e2b5e 45%, #2b3a7a 78%, #d4a43c 145%);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #e3b854 0%, #d4a43c 55%, #b8892e 100%);
+}
+
+.gold-line {
+  background: linear-gradient(90deg, #d4a43c 0%, #e3b854 50%, #b8892e 100%);
+}
+
+.brand-soft-gradient {
+  background: linear-gradient(135deg, #eef1fa 0%, #fdf6e7 60%, #fff1f2 100%);
+}
+
+/* Warm, premium hero canvas with soft gold + rose ambient glow */
+.hero-cream {
+  background-color: #fdfbf7;
+  background-image:
+    radial-gradient(ellipse 55% 45% at 12% 0%, rgba(212, 164, 60, 0.12), transparent 60%),
+    radial-gradient(ellipse 45% 40% at 92% 15%, rgba(244, 63, 94, 0.055), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 50% 110%, rgba(30, 43, 94, 0.05), transparent 60%);
+}
+
+/* Product Card */
+.product-card {
+  background: #ffffff;
+  border: 1px solid #e8ecf7;
+  box-shadow: 0 2px 8px -2px rgba(30, 43, 94, 0.05), 0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  border-color: #c9d4f2;
+  box-shadow: 0 16px 32px -8px rgba(30, 43, 94, 0.14), 0 4px 10px -2px rgba(212, 164, 60, 0.06);
+}
+
+/* Admin surfaces */
+.admin-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03), 0 1px 2px -1px rgba(0, 0, 0, 0.03);
+  transition: all 0.25s ease;
+}
+
+.admin-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Image zoom */
+.product-img-box {
+  overflow: hidden;
+  position: relative;
+}
+
+.product-img-box img {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-img-box:hover img {
+  transform: scale(1.05);
+}
+
+/* Premium gold shimmer for CTA accents */
+@keyframes soft-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+
+.soft-pulse {
+  animation: soft-pulse 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
